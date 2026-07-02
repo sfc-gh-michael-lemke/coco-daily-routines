@@ -1,0 +1,29 @@
+{
+  "name": "coco-daily-routines",
+  "version": "1.0.0",
+  "description": "Daily kickoff and closeout workflow skills for Cortex Code (CoCo). Integrates Jira, Gmail, Slack, and Google Calendar to produce structured Obsidian notes.",
+  "installKind": "github",
+  "github": {
+    "owner": "sfc-gh-michael-lemke",
+    "repo": "coco-daily-routines",
+    "branch": "main"
+  },
+  "skills": [
+    {
+      "name": "daily-kickoff",
+      "path": "skills/daily-kickoff/SKILL.md",
+      "description": "Morning daily kickoff routine — pulls Jira tasks, checks email and Slack, writes kickoff note to Obsidian."
+    },
+    {
+      "name": "daily-closeout",
+      "path": "skills/daily-closeout/SKILL.md",
+      "description": "End-of-day closeout routine — closes resolved Jira tasks, checks email and Slack, previews tomorrow, writes closeout note to Obsidian."
+    }
+  ],
+  "mcpDependencies": [
+    "atlassian-snow",
+    "gmail-nova",
+    "slack-snow",
+    "gcalendar-nova"
+  ]
+}
